@@ -10,6 +10,7 @@ Android 4.4(KITKAT) or higher
 3. Open the app, click on "Start Service" button. It will request user to grant permissions to access location services and to create        files in phone storage, especially if phone has Android 6.0 or higher, grant them.
 
 ### Location Tracking
+Location tracking is implemented using a handler to set time intervals between two data points.
 
 
 
