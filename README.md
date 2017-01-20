@@ -1,16 +1,17 @@
 # Location Tracker
-An android app that captures user's current using phone GPS.
+An android app that captures user's current location using phone GPS.
 
 ### Prerequisites
 Android 4.4(KITKAT) or higher
    
 ### Installation &  Usage
-1. To install, click on the apk and follow the instructions.
+1. To install, click on the .apk file and follow the instructions.
 2. Make sure phone GPS is enabled while using the app.
 3. Open the app, click on "Start Service" button. It will request user to grant permissions to access location services and to create        files in phone storage, especially if phone has Android 6.0 or higher, grant them.
 
 ### Location Tracking
-A background service called LocationService listens for location changes in two modes, Active and Idle
+
+
 
    
    
