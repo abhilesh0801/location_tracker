@@ -18,6 +18,8 @@ The time interval depends on the current mode, either Active(2 minutes) or Idle(
 Since updates provided by network provider are not valid, only GPS provider is used to request updates.
 
 System status data is written to a separate file by using a timer, which repeats the task every 10 minutes.
+
+The files containing location and system status data are stored in a folder "location_tracker" created inside phone's internal storage.
    
 ### Libraries used
 joda-time-2.2 : This library comes in very handy with date related operations, it provides a wide range of methods which the default android Date class lacks.
