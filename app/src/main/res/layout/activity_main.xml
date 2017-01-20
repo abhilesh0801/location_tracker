@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.abhi.locationapp.Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="85dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="240dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:text="@string/service_status"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="240dp"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textStatus"
+                android:textColor="@color/gray"
+                android:background="@color/lightGray"
+                android:gravity="center"
+                android:padding="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:layout_width="240dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:text="@string/running_since"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <Chronometer
+                android:layout_width="240dp"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:background="@color/lightGray"
+                android:id="@+id/textTime"
+                android:gravity="center"
+                android:padding="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_click"
+        android:text="@string/start_service"
+        android:textSize="18sp"
+        android:id="@+id/btnStart"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_gravity="bottom|center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"
+        android:layout_width="300dp"
+        android:layout_height="55dp" />
+
+</android.support.design.widget.CoordinatorLayout>

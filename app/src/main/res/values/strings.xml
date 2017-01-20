@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Location Tracker</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="start_service">START SERVICE</string>
+    <string name="stop_service">STOP SERVICE</string>
+
+    <string name="running">RUNNING</string>
+    <string name="stopped">STOPPED</string>
+
+    <string name="service_status">SERVICE STATUS</string>
+    <string name="running_since">SERVICE RUNNING FOR</string>
+
+    <string name="service_start_time">started_at</string>
+
+    <string name="latitude_format">LAT:%1$.6f</string>
+    <string name="longitude_format">LON:%1$.6f</string>
+    <string name="velocity_format">%1$.1fkmph</string>
+    <string name="accuracy_format">%1$.1fm</string>
+    <string name="satellites_format">%1$d satellites</string>
+</resources>
